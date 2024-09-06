@@ -1,0 +1,48 @@
+.page4 {
+    width: 100vw;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 41, 55, 1);
+    flex-direction: column;
+    cursor: default;
+
+    @media (max-width: 450px){
+        width: 110vw;
+        height: 35vh;
+    }
+}
+
+.page4 a {
+    font-size: 38px;
+    text-decoration: none;
+    color: white;
+
+    @media (max-width:450px) {
+        font-size: 18px;
+    }
+}
+
+.page4 a:hover {
+    font-size: 42px;
+    transition: 0.2s;
+    color: rgba(234, 179, 8, 1); 
+}
+
+.page4 h1 {
+    font-size: 66px;
+    color: rgba(234, 179, 8, 1);
+
+    @media (max-width:450px) {
+        font-size: 44px;
+    }
+}
+
+.conts {
+    width: 70vw;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

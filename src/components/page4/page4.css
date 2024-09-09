@@ -1,6 +1,6 @@
 .page4 {
     width: 100vw;
-    height: 55vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,14 +8,19 @@
     flex-direction: column;
     cursor: default;
 
-    @media (max-width: 450px){
+    @media (max-width: 480px){
+        width: 110vw;
+        height: 30vh;
+    }
+
+    @media (max-width:375px) {
         width: 110vw;
         height: 35vh;
     }
 }
 
 .page4 a {
-    font-size: 38px;
+    font-size: 28px;
     text-decoration: none;
     color: white;
 
@@ -31,7 +36,8 @@
 }
 
 .page4 h1 {
-    font-size: 66px;
+    font-size: 46px;
+    margin-bottom: 22px;
     color: rgba(234, 179, 8, 1);
 
     @media (max-width:450px) {
@@ -41,8 +47,13 @@
 
 .conts {
     width: 70vw;
-    height: 50%;
+    height: 35%;
+    margin: 11px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 377px) {
+        width: 86vw;
+    }
 }

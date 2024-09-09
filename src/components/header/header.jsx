@@ -5,7 +5,7 @@ export const Header = ()=> {
             <header className="page1" id='pag1'>
 
                 <div className='apart'>
-                    <h1>Meu portifolio</h1>
+                    <h1>Meu Portifolio</h1>
                 </div>
                 
                 <div className='links'>

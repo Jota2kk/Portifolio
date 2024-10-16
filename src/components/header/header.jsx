@@ -1,19 +1,34 @@
-import './header.css';
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "./header.css";
 
-export const Header = ()=> {
-    return (
-            <header className="page1" id='pag1'>
+export const NavBar=()=> {
+	const navRef = useRef();
 
-                <div className='apart'>
-                    <h1>Meu Portifolio</h1>
-                </div>
-                
-                <div className='links'>
-                    <a href='#pag2'>Home</a>
-                    <a href='#pag3'>Projetos</a>
-                    <a href='#pag4'>Contatos</a>
-                </div>
-                
-            </header>
-    )
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
+
+	return (
+		<header>
+			<h1>Meu Portifolio</h1>
+			<nav ref={navRef}>
+				<a href="#pag2">HOME</a>
+				<a href="#pag3">PROJETOS</a>
+				<a href="#pag4">CONTATOS</a>
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+			</nav>
+			<button
+				className="nav-btn"
+				onClick={showNavbar}>
+				<FaBars />
+			</button>
+		</header>
+	);
 }

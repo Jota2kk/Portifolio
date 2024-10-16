@@ -1,59 +1,63 @@
 .page4 {
-    width: 100vw;
-    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(31, 41, 55, 1);
     flex-direction: column;
     cursor: default;
 
-    @media (max-width: 480px){
-        width: 110vw;
-        height: 30vh;
+    height: 48vh;
+    
+
+    @media only screen and (min-width:400px) and (max-width:477px){
+        min-width: 100%;
+        height: 42vh;
     }
 
-    @media (max-width:375px) {
-        width: 110vw;
-        height: 35vh;
+    @media (max-width:399px) {
+        min-width: 100%;
+        height: 42vh;
     }
 }
 
 .page4 a {
-    font-size: 28px;
+    font-size: 38px;
     text-decoration: none;
-    color: white;
+    color: black;
+}
 
-    @media (max-width:450px) {
-        font-size: 18px;
+@media only screen and (min-width:400px) and (max-width:477px){
+    .page4 a {
+        font-size: 46px;
     }
 }
 
 .page4 a:hover {
-    font-size: 42px;
+    font-size: 46px;
     transition: 0.2s;
     color: rgba(234, 179, 8, 1); 
 }
 
 .page4 h1 {
     font-size: 46px;
+    margin-top: 40px;
     margin-bottom: 22px;
     color: rgba(234, 179, 8, 1);
-
-    @media (max-width:450px) {
-        font-size: 44px;
-    }
 }
 
 .conts {
-    width: 70vw;
-    height: 35%;
-    margin: 11px;
+    width: 30%;
+    height: 40%;
+    padding: 2rem;
+    margin: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 377px) {
-        width: 86vw;
+}
+
+@media only screen and (max-width:477px){
+    .conts {
+        width: 80%;
     }
 }
+

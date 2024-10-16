@@ -1,58 +1,98 @@
-.page1 {
-    width: 100vw;
-    height: 11vh;
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    opacity: 1;
+    cursor: default;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    background-color: white;
+}
+
+nav {
+    margin-right: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+header h1 {
+    width: 60%;
+    margin-left: 25px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: rgba(17, 24, 39, 1);
-    color: white;
-    position: fixed;
-    cursor: default;
-    z-index: 100;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
-
-    @media (max-width: 480px) {
-        width: 100%;
-    }
-
-    @media (max-width: 375px) {
-        h1 {
-            font-size: 22px;
-        }
-    }
+    color: rgba(117, 0, 226, 0.637);;
 }
 
-.apart {
-    font-size: 14px;
-    width: 33vw;
 
-    @media (max-width: 450px) {
-        font-size: 12px;
-        margin-left: 30px;;
-    }
-}
-
-.links {
-    padding: 0.3rem;
-  scroll-behavior: smooth;
-}
-
-.links a {
-    text-decoration: none;
-    color: rgba(156, 163, 175, 1);
-    font-size: 24px ;
+nav a {
+    font-size: 20px ;
+    font-weight: 600;
     margin: 22px;
-
-    @media(max-width: 450px){
-        font-size: 17px;
-    }
-
-    @media (max-width: 375px) {
-        font-size: 16px;
-        margin-left: 6px;
-    }
+    text-decoration: none;
+    color: rgb(137, 139, 141);
 }
 
-.links a:hover  {
-    color: white;
+nav a:hover {
+    color: rgba(117, 0, 226, 0.637);
+}
+
+.nav-btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+    margin-right: 25px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	header nav {
+		position: fixed;
+		height: 11vh;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: 1s;
+        background-color: rgb(243, 243, 243);
+	}
+
+    nav a {
+        color: black;
+        font-weight: bolder;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+	.responsive_nav {
+		transform:translateX(100vw)
+	}
+
+	.nav-close-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+
+    header h1 {
+        font-size: 26px;
+    }
 }

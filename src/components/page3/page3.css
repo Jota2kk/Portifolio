@@ -8,7 +8,7 @@
     box-shadow: 5px 5px 10px rgba(54, 26, 26, 0.212);
 }
 
-@media only screen and (max-width:499px) {
+@media only screen and (max-width:790px) {
     .page3 {
         width: 100%;
         height: 100%;
@@ -26,7 +26,7 @@
     overflow: hidden;
 }
 
-@media only screen and (max-width:499px) {
+@media only screen and (max-width:790px) {
     #h1-mpj {
         font-size: 32px;
         margin: 30px 0;
@@ -44,7 +44,7 @@
     overflow: hidden;
 }
 
-@media only screen and (max-width:499px) {
+@media only screen and (max-width:790px) {
     .projects {
         width: 94%;
         height: auto;
@@ -85,7 +85,7 @@
     transition: 0.3s;
 }
 
-@media only screen and (max-width:499px) {
+@media only screen and (max-width:790px) {
     .prj1, .prj2, .prj3, .prj4 {
         width: 97%;
         height: 86vh;
@@ -104,7 +104,7 @@
     text-align: center;
 }
 
-@media only screen and (min-width:399px) and (max-width:499px) {
+@media only screen and (min-width:399px) and (max-width:790px) {
     .descri {
         width: 100%;
         padding: 1rem;
@@ -139,7 +139,7 @@
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.212);
 }
 
-@media only screen and (min-width:399px) and (max-width:477px) {
+@media only screen and (min-width:399px) and (max-width:790px) {
     .a-imgs {
         width: 110%;
         height: 40%;
@@ -165,11 +165,10 @@
     }
 }
 
-
-
 .buttons {
-    width: 100%;
-    height: 25%;
+    width: 30vw;
+    max-width: 30vw;
+    max-height: 10vh;
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -178,10 +177,13 @@
 
 .buttons button {
     width: 25%;
-    height: 110%;
+    height: 100%;
     margin: 20px;
     border-radius: 20px;
     border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
     background-image: linear-gradient(to right, rgba(117, 0, 226, 0.637) 50%, rgb(255, 255, 255) 50%);
     background-size: 210% 100%;
@@ -195,6 +197,9 @@
     text-decoration: none;
     color: white;
     font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttons button a:hover {
@@ -210,7 +215,7 @@
 }
 
 
-@media only screen and (min-width:399px) and (max-width:477px) {
+@media only screen and (min-width:399px) and (max-width:790px) {
     .buttons {
         justify-content: center;
         align-items: center;
@@ -281,10 +286,10 @@
     font-style: italic;
 }
 
-@media only screen and (min-width:400px) and (max-width:477px) {
+@media only screen and (min-width:399px) and (max-width:790px) {
     .eta {
         width: 120%;
-        height: 100%;
+        height: 80%;
         gap: 0;
         justify-content: initial;
         text-align: center;

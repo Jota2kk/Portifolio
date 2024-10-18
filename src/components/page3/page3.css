@@ -166,7 +166,6 @@
 }
 
 .buttons {
-    width: 30vw;
     max-width: 30vw;
     max-height: 10vh;
     padding: 1rem;
@@ -214,6 +213,15 @@
     border-color: rgba(117, 0, 226, 0.637) ;
 }
 
+@media only screen and (min-width:1280px) and (max-width:1440px){
+    .buttons {
+        max-width: 60vw;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}
 
 @media only screen and (min-width:399px) and (max-width:790px) {
     .buttons {
@@ -281,9 +289,49 @@
 }
 
 .eta p {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bolder;
     font-style: italic;
+}
+
+@media only screen and (min-width:1280px) and (max-width:1440px) {
+    .eta {
+        height: 100%;
+    }
+
+    .eta h1 {
+        width: 92%;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.212);
+    }
+
+    .eta p {
+        width: 100%;
+        font-size: 18px;
+        padding: 1rem;
+    }
+
+    .eta a {
+        width: 100%;
+        padding: 1rem;
+        font-size: 24px;
+    }
+
+}
+
+@media (min-width:1920px) {
+
+    .eta h1 {
+        font-size: 40px;
+    }
+    .eta p {
+        font-size: 22px;
+    }
+
+    .eta a {
+        font-size: 32px;
+    }
+
 }
 
 @media only screen and (min-width:399px) and (max-width:790px) {

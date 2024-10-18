@@ -7,7 +7,7 @@ export const Page2 = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowScrollAlert(false);
-    }, 2000);
+    }, 4000);
 
     return () => {
       clearTimeout(timer);

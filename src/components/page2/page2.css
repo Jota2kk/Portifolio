@@ -58,9 +58,9 @@
 
 .texts h1 {
     color: rgba(117, 0, 226, 0.637);
-    font-size: 38px;
+    font-size: 2.1vw;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 
     @media (max-width: 790px) {
         font-size: 6vw;
@@ -80,7 +80,7 @@
 }
 
 .texts p {
-    font-size: 55px;
+    font-size: 2.7vw;
     margin-bottom: 18px;
     font-weight: bolder;
     color: rgba(0, 0, 0, 0.904);
@@ -104,7 +104,7 @@
 
 .texts a {
     color: rgb(131, 131, 131);
-    font-size: 26px;
+    font-size: 1.4vw;
 
     @media (max-width:790px) {
         font-size: 6vw;
@@ -126,9 +126,8 @@
 }
 
 .texts button {
-    width: 24%;
-    height: 52px;
-    margin-top: 26px;
+    width: 20%;
+    min-height: 6vh;
     border-radius: 14px;
     border-color: transparent;
     margin-top: 22px;
@@ -152,11 +151,16 @@
     background-position: right;
     border-width: 3px;
     border-color: rgba(117, 0, 226, 0.637) ;
+
+    a {
+        color: rgba(117, 0, 226, 0.637);
+        width: 100%;
+    }
 }
 
 .texts button a {
     color: white;
-    font-size: 24px;
+    font-size: 1vw;
     font-weight: bold;
     text-decoration: none;
 
@@ -177,13 +181,6 @@
     @media (max-width:350px){
         font-size: 4vw;
     }
-}
-
-
-
-.texts button a:hover {
-    color: rgba(117, 0, 226, 0.637);
-    width: 100%;
 }
 
 .scroll-alert {
